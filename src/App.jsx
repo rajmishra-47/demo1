@@ -16,6 +16,7 @@ function App() {
   return (
     <>
     <Box1/>
+    <p>apple</p>
     </>
   );
 }
