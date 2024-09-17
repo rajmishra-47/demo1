@@ -12,8 +12,8 @@ export default function Box1() {
     const [text,setText]=useState('')
     const [text2,prevtext]=useState('')
 
-    useEffect( async ()=>{
-            const result= await fetch('https://catfact.ninja/fact').then(result=>result.json()).then(data=>{
+    useEffect(  ()=>{
+            const result=  fetch('https://catfact.ninja/fact').then(result=>result.json()).then(data=>{
                 setText(data.fact)
                 textContainer.push(data.fact)
             }).catch(err=>setText(err.message));
